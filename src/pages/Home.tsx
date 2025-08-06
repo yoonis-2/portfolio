@@ -39,7 +39,7 @@ const Home: React.FC = () => {
       content: 'Yoonis delivered an exceptional website that perfectly captured our brand. His attention to detail and professionalism made the entire process smooth.',
     },
     {
-      name: 'Fatima Ali',
+      name: 'Axmed Ali',
       role: 'Startup Founder',
       content: 'Working with Yoonis was a great experience. He understood our requirements and delivered a modern, responsive website that exceeded our expectations.',
     },
@@ -52,47 +52,52 @@ const Home: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
-      {/* Hero Section */}
-      <section className="pt-24 pb-16 px-4 sm:px-6 lg:px-8" data-aos="fade-up">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div data-aos="fade-right" data-aos-delay="200">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
-                Hi, I'm{' '}
-                <span className="text-blue-600 dark:text-blue-400">Yoonis Galad</span>
-              </h1>
-              <h2 className="text-xl md:text-2xl text-gray-600 dark:text-gray-400 mb-6">
-                Frontend Developer
-              </h2>
-              <p className="text-lg text-gray-600 dark:text-gray-400 mb-8 leading-relaxed">
-                I'm a passionate Computer Science student from Mogadishu, specializing in creating 
-                beautiful and functional web experiences. I love turning ideas into reality through 
-                clean code and thoughtful design.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Link
-                  to="/projects"
-                  className="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors duration-200"
-                >
-                  View My Work
-                  <ArrowRight size={18} className="ml-2" />
-                </Link>
-                <Link
-                  to="/contact"
-                  className="inline-flex items-center px-6 py-3 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 font-medium rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors duration-200"
-                >
-                  Get In Touch
-                </Link>
-              </div>
-            </div>
-            <div className="flex justify-center" data-aos="fade-left" data-aos-delay="400">
-              <div className="w-80 h-80 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full flex items-center justify-center">
-                <User size={120} className="text-white" />
-              </div>
-            </div>
-          </div>
+    {/* Hero Section */}
+<section className="pt-24 pb-16 px-4 sm:px-6 lg:px-8" data-aos="fade-up">
+  <div className="max-w-7xl mx-auto">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div data-aos="fade-right" data-aos-delay="200">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
+          Hi, I'm{' '}
+          <span className="text-blue-600 dark:text-blue-400">Yoonis Galad</span>
+        </h1>
+        <h2 className="text-xl md:text-2xl text-gray-600 dark:text-gray-400 mb-6">
+          Frontend Developer
+        </h2>
+        <p className="text-lg text-gray-600 dark:text-gray-400 mb-8 leading-relaxed">
+          I'm a passionate Computer Science student from Mogadishu, specializing in creating 
+          beautiful and functional web experiences. I love turning ideas into reality through 
+          clean code and thoughtful design.
+        </p>
+        <div className="flex flex-col sm:flex-row gap-4">
+          <Link
+            to="/projects"
+            className="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors duration-200"
+          >
+            View My Work
+            <ArrowRight size={18} className="ml-2" />
+          </Link>
+          <Link
+            to="/contact"
+            className="inline-flex items-center px-6 py-3 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 font-medium rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors duration-200"
+          >
+            Get In Touch
+          </Link>
         </div>
-      </section>
+      </div>
+      <div className="flex justify-center" data-aos="fade-left" data-aos-delay="400">
+        <div className="w-80 h-80 rounded-full overflow-hidden shadow-lg">
+          <img
+            src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=800"
+            alt="Yoonis Galad"
+            className="w-full h-full object-cover"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* Featured Projects */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white dark:bg-gray-800">
